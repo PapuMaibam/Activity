@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forms</title>
+    <style>
+        form{
+            width: 300px;
+        }
+
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+
+        input, textarea,select {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+        }
+
+        button{
+            margin-top: 15px;
+            padding: 10px;
+            background-color: blue;
+            color: white;
+            border: none;
+            border: 4px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Registrations Froms</h1>
+
+    <form>
+        <label for="name">Name:</label>
+        <input type=" text" id="name"/>
+        <br>
+        <br>
+         
+        <label for="email">Email:</label>
+        <input type="eamil" id="email"/>
+        <br>
+        <br>
+
+        <label for="password">Password</label>
+        <input type="password" id="password"/>
+        <br>
+        <br>
+
+        <label>Gender:</label>
+        <input type="radio" name="gender" value="male"/>Male
+        <input type="radio" name="gender" value="female"/>Female
+        <input type="radio" name="others" value="others"/>Others
+        <br>
+        <br>
+
+        <label>Hobbies:</label>
+        <input type="checkbox" value="reading"/> Reading
+        <input type="checkbox" value="dancing"/> Dancing
+        <input type="checkbox" value="singing"/> Singing
+        <input type="checkbox" value="playing"/> Playing
+        <input type="checkbox" value="coding"/> Coding
+        <br>
+        <br>
+
+        <label for="city">City:</label>
+        <select id="city">
+            <option value=""> --Select--
+                <option value="delhi">Delhi</option>
+                <option value="mumbai">Mumbai</option>
+                <option value="kolkata">Kolkata</option>
+                <option value="bangalore">Bangalore</option>
+                <option value="pune">pune</option>
+                <option value="manipur">Manipur</option>
+
+            </option>
+        </select>
+        <br>
+        <br>
+
+        <label for="message">Message</label>
+        <textarea id="message" rows="4"></textarea>
+        <br>
+        <br>
+
+        <button type="submit">Register</button>
+        <button type="reset">Reset</button>
+
+    </form>
+</body>
+</html>
